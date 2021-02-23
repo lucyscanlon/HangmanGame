@@ -13,7 +13,7 @@
   <main class="background">
     <section class="score--newgame--container">
       <div class="score--leftfloat">
-        <p>High Score: 5</p>
+        <p>High Score: <span class="high--score">5</span></p>
       </div>
       <div class="score--rightfloat">
         <div class="newgame--rightfloat">
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="currentscore--leftfloat">
-          <p>Current Score: 7</p>
+          <p>Current Score: <span class="current--score">7</span></p>
         </div>
       </div>
     </section>
@@ -35,7 +35,7 @@
       <div class="maingame-float-container">
         <section class="maingame--leftfloat">
           <div class="maingame--hiddenword-container">
-            <p>_____</p>
+            <p class="display--word">_____</p>
           </div>
           <div class="maingame--hangmanimg-container">
             <img src="/img/hangman10.png" />
@@ -45,40 +45,40 @@
         <section class="maingame--rightfloat">
           <div class="maingame-alphabet-container">
             <div class="maingame-alphabet-row">
-              <div class="maingame-alphabet-div-centeralign"><button type="button">A</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">B</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">C</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">D</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">E</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">A</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">B</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">C</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">D</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">E</button></div>
             </div>
             <div class="maingame-alphabet-row">
-              <div class="maingame-alphabet-div-centeralign"><button type="button">F</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">G</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">H</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">I</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">J</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">F</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">G</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">H</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">I</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">J</button></div>
             </div>
             <div class="maingame-alphabet-row">
-              <div class="maingame-alphabet-div-centeralign"><button type="button">K</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">L</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">M</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">N</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">O</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">K</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">L</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">M</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">N</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">O</button></div>
             </div>
             <div class="maingame-alphabet-row">
-              <div class="maingame-alphabet-div-centeralign"><button type="button">P</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">Q</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">R</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">S</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">T</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">P</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">Q</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">R</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">S</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">T</button></div>
             </div>
             <div class="maingame-alphabet-row">
-              <div class="maingame-alphabet-div-centeralign"><button type="button">U</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">V</button></div>
-              <div class="maingame-alphabet-div-centeralign"><button type="button">W</button></div>
-              <div class="maingame-alphabet-div-centeralign smallerbutton"><button type="button">X</button></div>
-              <div class="maingame-alphabet-div-centeralign smallerbutton"><button type="button">Y</button></div>
-              <div class="maingame-alphabet-div-centeralign smallerbutton"><button type="button">Z</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">U</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">V</button></div>
+              <div class="maingame-alphabet-div-centeralign--active"><button class="alphabet--button" type="button">W</button></div>
+              <div class="maingame-alphabet-div-centeralign--active smallerbutton"><button class="alphabet--button" type="button">X</button></div>
+              <div class="maingame-alphabet-div-centeralign--active smallerbutton"><button class="alphabet--button" type="button">Y</button></div>
+              <div class="maingame-alphabet-div-centeralign--active smallerbutton"><button class="alphabet--button" type="button">Z</button></div>
             </div>
 
           </div>

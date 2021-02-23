@@ -170,12 +170,14 @@ box-shadow: 10px 10px 49px -28px rgba(0,0,0,0.75);
 
 }
 
-.maingame-alphabet-div-centeralign {
+.maingame-alphabet-div-centeralign--active {
   width: 20%;
   text-align: center;
 }
 
-.maingame-alphabet-div-centeralign button {
+
+/*active */
+.maingame-alphabet-div-centeralign--active button {
   width: 60px;
   height: 55px;
   background-color: #EC6FA1;
@@ -188,9 +190,38 @@ box-shadow: 10px 10px 49px -28px rgba(0,0,0,0.75);
   font-size: 17px;
 }
 
-.maingame-alphabet-div-centeralign button:hover {
+.maingame-alphabet-div-centeralign--active button:hover {
   background-color: #fff;
   color: #D24E1B;
+}
+
+
+/*inactive */
+.button--correct--inactive button  {
+  background-color: #74ED94;
+  color: #212121;
+}
+
+.button--correct--inactive button:hover  {
+  background-color: #74ED94;
+  color: #212121;
+  cursor: default;
+}
+
+.button--incorrect--inactive button  {
+  background-color: #ED5E5E;
+  color: #212121;
+}
+
+.button--incorrect--inactive button:hover  {
+  background-color: #ED5E5E;
+  color: #212121;
+  cursor: default;
+}
+
+
+button .alphabet--button-correct {
+  background-color: #7BFF9E;
 }
 
 .smallerbutton {
@@ -206,7 +237,7 @@ box-shadow: 10px 10px 49px -28px rgba(0,0,0,0.75);
   width: 1000px;
   height: 40px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 25px;
 
 }
 
