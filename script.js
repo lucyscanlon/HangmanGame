@@ -4,16 +4,26 @@
 
 let displayWord = document.querySelector('.display--word');
 const alphabetButtons = document.querySelectorAll('.alphabet--button');
-let highScore = document.querySelector('.high--score');
-let currentScore = document.querySelector('.current--score');
+const highScoreEl = document.querySelector('.high--score');
+const currentScoreEl = document.querySelector('.current--score');
+const lettersLeftEl = document.querySelector('.letters--left');
+const livesLeftEl = document.querySelector('.lives--left');
+const livesUsedEl = document.querySelector('.lives--used');
 
 // secret word
 const secretWord = "HELLO";
 let guessingWord = ['_', '_', '_', '_', '_'];
+let score = 10;
+let lettersToGuess = 5;
+let livesLeft = 10;
+let livesUsed = 0;
 
 //setting all scores
-highScore.textContent = 0;
-
+highScoreEl.textContent = 0;
+currentScoreEl.textContent = 10;
+lettersLeftEl.textContent = 5;
+livesLeftEl.textContent = 10;
+livesUsedEl.textContent = 0;
 
 
 displayWord.textContent = "_____";
@@ -36,6 +46,11 @@ alphabetButtons.forEach(item =>{
         displayWord.textContent = guessingWord.join('');
         letterCorrect = true;
 
+        //update scores
+        lettersToGuess--;
+        lettersLeftEl.textContent = lettersToGuess;
+
+
         // Turning the correct selected letter green
         // Removing event listener
         item.parentNode.classList.add('button--correct--inactive');
@@ -49,6 +64,14 @@ alphabetButtons.forEach(item =>{
         console.log(guessedLetter, 'incorrect');
         item.parentNode.classList.add('button--incorrect--inactive');
         item.removeEventListener('click', checkGuess);
+
+        //update scores
+        score--;
+        livesLeft--;
+        livesUsed++;
+        currentScoreEl.textContent = score;
+        livesLeftEl.textContent = livesLeft;
+        livesUsedEl.textContent = livesUsed;
       }
     })
   })
