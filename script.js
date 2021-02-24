@@ -36,7 +36,7 @@ livesUsedEl.textContent = 0;
 displayWord.textContent = "_____";
 
 // add event listeners to all alphabet buttons
-alphabetButtons.forEach(item =>{
+/*alphabetButtons.forEach(item =>{
   item.addEventListener('click', function checkGuess() {
     if(playing) {
       const guessedLetter = item.textContent;
@@ -131,4 +131,4 @@ alphabetButtons.forEach(item =>{
     })
 
 
-  })
+  })*/
