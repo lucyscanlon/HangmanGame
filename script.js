@@ -89,7 +89,6 @@ const generateWord = function() {
 
   }
 
-  console.log(randomWord);
 
 }
 
@@ -218,7 +217,6 @@ newGameEl.addEventListener('click', function() {
   livesLeft = 10;
   livesUsed = 0;
   playing = true;
-  highScore = 0;
   numberofTurn = 0;
 
   //resetting the text content
