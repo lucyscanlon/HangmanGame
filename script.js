@@ -105,6 +105,8 @@ let playing = true;
 let highScore = 0;
 let numberofTurn = 0;
 
+hangmanImgEl.src = '/img/hangman0.PNG';
+
 let needsEventListenerArray = [];
 
 //setting all scores
